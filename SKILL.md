@@ -2,7 +2,7 @@
 name: fact-visualization-jayt-core-logic-skill
 description: "文脈: 目的に沿った事実の図解。種類: 中核判断。使う場面: 名前で指名されたときだけ使い、会話の内容からは選ばない。"
 metadata:
-  version: "0.2.0"
+  version: "0.2.2"
   repository: "https://github.com/junyatakechi/fact-visualization-jayt-core-logic-skill"
   author: "jayt"
   design: "人の判断を切り出すAgent Skillsの設計_v4.0.0"
