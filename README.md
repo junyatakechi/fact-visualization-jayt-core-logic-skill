@@ -5,15 +5,19 @@
 
 ## 必要なもの
 
-- [Claude Code](https://docs.claude.com/en/docs/claude-code/overview)
+- [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) か [Codex](https://developers.openai.com/codex)
 
 ## インストール
+
+Claude Code では、次のようにクローンする。
 
 ```bash
 git clone https://github.com/junyatakechi/fact-visualization-jayt-core-logic-skill.git ~/.claude/skills/fact-visualization-jayt-core-logic-skill
 ```
 
-特定のプロジェクトだけで使うなら、`<プロジェクト>/.claude/skills/` の中でクローンする。
+Codex では、`~/.claude/skills/` を `~/.agents/skills/` に替えてクローンする。
+
+特定のプロジェクトだけで使うなら、`<プロジェクト>/.claude/skills/`（Codex は `<プロジェクト>/.agents/skills/`）の中でクローンする。
 
 ## セットアップ
 
@@ -22,7 +26,7 @@ git clone https://github.com/junyatakechi/fact-visualization-jayt-core-logic-ski
 ## 使い方
 
 主に、アプリケーションスキルから呼ばれる。
-直接聞くときも、`/fact-visualization-jayt-core-logic-skill` で名前を指名する。指名しないと、このスキルは読み込まれない。
+直接聞くときも、`/fact-visualization-jayt-core-logic-skill` で名前を指名する。指名しないと、このスキルは読み込まれない。Codex では、例の `/` を `$` に替えて指名する。
 
 - 「/fact-visualization-jayt-core-logic-skill 週ごとの売上と目標を比べる図は、どの形にする？」
 - 「/fact-visualization-jayt-core-logic-skill この図の題は何と書けばいい？」
